@@ -1,0 +1,6 @@
+/vendor/
+logs/*
+.vscode/
+.idea/
+.phpunit.result.cache
+src/app/config/.env

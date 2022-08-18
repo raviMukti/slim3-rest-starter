@@ -1,0 +1,43 @@
+{
+    "name": "ravimukti/slim3rest-starter",
+    "description": "A Starter Project For REST",
+    "keywords": ["starter-project", "rest", "psr7"],
+    "license": ["MIT"],
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Ravi Mukti",
+            "email": "shinjiravi@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "slim/slim": "^3.1",
+        "slim/php-view": "^2.0",
+        "monolog/monolog": "^1.17",
+        "respect/validation": "^2.2",
+        "vlucas/phpdotenv": "^5.3",
+        "guzzlehttp/guzzle": "^6.5 || ^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ApiChannel\\": "src/app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "process-timeout": 0,
+        "sort-packages": true
+    },
+    "scripts": {
+        "start": "php -S localhost:8080 -t public",
+        "test": "phpunit --testdox"
+    }
+}
