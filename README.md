@@ -33,7 +33,7 @@
 ## How To Install
 
 
-`composer create-project ravimukti/slim3rest-starter your-project-name `
+`composer create-project ravimukti/slim3rest-starter your-project-name --stability=dev`
 
 
 ## API Path Pattern
